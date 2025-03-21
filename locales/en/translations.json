@@ -1,0 +1,74 @@
+{
+  "title": "Biblical Terms Analysis",
+  "main_title": "Analysis of 'Eon' and 'Eonian' Terms",
+  "nav": {
+    "home": "Home",
+    "gospels": "Gospels",
+    "epistles": "Epistles",
+    "others": "Others",
+    "analyses": "Analyses",
+    "information": "Information",
+    "statistics": "Statistics",
+    "ktk_analysis": "KTK Analysis",
+    "misleading_translations": "Misleading Translations",
+    "reinforced_deception": "Reinforced Deception",
+    "other_terms": "Other Mistranslated Terms",
+    "in_depth": "In-depth Analysis",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Comparative Analysis of Greek Terms 'eon' and 'eonian'",
+    "subtitle": "Discover the true meaning of mistranslated terms in the Bible"
+  },
+  "intro": {
+    "title": "Introduction",
+    "p1": "This site presents a comparative analysis of the Greek terms 'eon' (αἰών) and 'eonian' (αἰώνιος) in the New Testament, as well as other terms often mistranslated in conventional Bible versions.",
+    "p2": "Our analysis is based on the principles of the Keys to the Kingdom Bible (KTK) and compares the original Concordant version, its formal French translation, and the Darby version, highlighting potentially misleading translations.",
+    "p3": "Navigate through the different sections to explore verses by biblical book and discover detailed analyses."
+  },
+  "featured": {
+    "title": "Featured Verses"
+  },
+  "stats": {
+    "title": "Quick Statistics",
+    "occurrences": "Occurrences",
+    "occurrences_desc": "verses containing the terms 'eon' or 'eonian'",
+    "books": "Books",
+    "books_desc": "New Testament books containing these terms",
+    "gospels": "Gospels",
+    "gospels_desc": "occurrences in the four gospels",
+    "epistles": "Epistles",
+    "epistles_desc": "occurrences in the epistles"
+  },
+  "footer": {
+    "copyright": "© 2025 Biblical Terms Analysis",
+    "contact": "Contact"
+  },
+  "verse": {
+    "view_details": "View details",
+    "context": "Context",
+    "original": "Concordant Original",
+    "french": "Formal French Translation",
+    "darby": "Darby Version",
+    "greek_term": "Greek Term",
+    "analysis": "Analysis"
+  },
+  "breadcrumbs": {
+    "evangiles": "Gospels",
+    "epitres": "Epistles",
+    "analyses": "Analyses"
+  },
+  "filter": {
+    "title": "Filter Verses",
+    "term": "Greek Term",
+    "apply": "Apply"
+  },
+  "book": {
+    "title": "Verses in",
+    "total_verses": "Total verses"
+  },
+  "analysis": {
+    "title": "Analysis",
+    "back_to_list": "Back to list"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Analyse van bijbelse termen",
+  "main_title": "Analyse van de termen 'Eon' en 'Eonisch'",
+  "nav": {
+    "home": "Home",
+    "gospels": "Evangeliën",
+    "epistles": "Brieven",
+    "others": "Overige",
+    "analyses": "Analyses",
+    "information": "Informatie",
+    "statistics": "Statistieken",
+    "ktk_analysis": "KTK-analyse",
+    "misleading_translations": "Misleidende vertalingen",
+    "reinforced_deception": "Versterkt bedrog",
+    "other_terms": "Andere verkeerd vertaalde termen",
+    "in_depth": "Diepgaande analyse",
+    "about": "Over ons"
+  },
+  "hero": {
+    "title": "Vergelijkende analyse van de Griekse termen 'eon' en 'eonisch'",
+    "subtitle": "Ontdek de ware betekenis van verkeerd vertaalde termen in de Bijbel"
+  },
+  "intro": {
+    "title": "Introductie",
+    "p1": "Deze website presenteert een vergelijkende analyse van de Griekse termen 'eon' (αἰών) en 'eonisch' (αἰώνιος) in het Nieuwe Testament, evenals andere termen die vaak verkeerd worden vertaald in conventionele Bijbelversies.",
+    "p2": "Onze analyse is gebaseerd op de principes van de Keys to the Kingdom Bible (KTK) en vergelijkt de originele Concordant-versie, de formele Franse vertaling ervan en de Darby-versie, waarbij potentieel misleidende vertalingen worden benadrukt.",
+    "p3": "Navigeer door de verschillende secties om verzen per bijbelboek te verkennen en gedetailleerde analyses te ontdekken."
+  },
+  "featured": {
+    "title": "Uitgelichte verzen"
+  },
+  "stats": {
+    "title": "Snelle statistieken",
+    "occurrences": "Voorkomens",
+    "occurrences_desc": "verzen met de termen 'eon' of 'eonisch'",
+    "books": "Boeken",
+    "books_desc": "Nieuwe Testament-boeken met deze termen",
+    "gospels": "Evangeliën",
+    "gospels_desc": "voorkomens in de vier evangeliën",
+    "epistles": "Brieven",
+    "epistles_desc": "voorkomens in de brieven"
+  },
+  "footer": {
+    "copyright": "© 2025 Analyse van bijbelse termen",
+    "contact": "Contact"
+  },
+  "verse": {
+    "view_details": "Details bekijken",
+    "context": "Context",
+    "original": "Concordant Origineel",
+    "french": "Formele Franse vertaling",
+    "darby": "Darby-versie",
+    "greek_term": "Griekse term",
+    "analysis": "Analyse"
+  },
+  "breadcrumbs": {
+    "evangiles": "Evangeliën",
+    "epitres": "Brieven",
+    "analyses": "Analyses"
+  },
+  "filter": {
+    "title": "Verzen filteren",
+    "term": "Griekse term",
+    "apply": "Toepassen"
+  },
+  "book": {
+    "title": "Verzen in",
+    "total_verses": "Totaal aantal verzen"
+  },
+  "analysis": {
+    "title": "Analyse",
+    "back_to_list": "Terug naar lijst"
+  }
+}

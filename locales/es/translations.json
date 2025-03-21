@@ -1,0 +1,74 @@
+{
+  "title": "Análisis de términos bíblicos",
+  "main_title": "Análisis de los términos 'Eón' y 'Eónico'",
+  "nav": {
+    "home": "Inicio",
+    "gospels": "Evangelios",
+    "epistles": "Epístolas",
+    "others": "Otros",
+    "analyses": "Análisis",
+    "information": "Información",
+    "statistics": "Estadísticas",
+    "ktk_analysis": "Análisis KTK",
+    "misleading_translations": "Traducciones engañosas",
+    "reinforced_deception": "Engaño reforzado",
+    "other_terms": "Otros términos mal traducidos",
+    "in_depth": "Análisis en profundidad",
+    "about": "Acerca de"
+  },
+  "hero": {
+    "title": "Análisis comparativo de los términos griegos 'eón' y 'eónico'",
+    "subtitle": "Descubra el verdadero significado de los términos mal traducidos en la Biblia"
+  },
+  "intro": {
+    "title": "Introducción",
+    "p1": "Este sitio presenta un análisis comparativo de los términos griegos 'eón' (αἰών) y 'eónico' (αἰώνιος) en el Nuevo Testamento, así como otros términos a menudo mal traducidos en las versiones convencionales de la Biblia.",
+    "p2": "Nuestro análisis se basa en los principios de la Biblia Keys to the Kingdom (KTK) y compara la versión Concordant original, su traducción al francés formal, y la versión Darby, destacando las traducciones potencialmente engañosas.",
+    "p3": "Navegue a través de las diferentes secciones para explorar los versículos por libro bíblico y descubrir análisis detallados."
+  },
+  "featured": {
+    "title": "Versículos destacados"
+  },
+  "stats": {
+    "title": "Estadísticas rápidas",
+    "occurrences": "Ocurrencias",
+    "occurrences_desc": "versículos que contienen los términos 'eón' o 'eónico'",
+    "books": "Libros",
+    "books_desc": "libros del Nuevo Testamento que contienen estos términos",
+    "gospels": "Evangelios",
+    "gospels_desc": "ocurrencias en los cuatro evangelios",
+    "epistles": "Epístolas",
+    "epistles_desc": "ocurrencias en las epístolas"
+  },
+  "footer": {
+    "copyright": "© 2025 Análisis de términos bíblicos",
+    "contact": "Contacto"
+  },
+  "verse": {
+    "view_details": "Ver detalles",
+    "context": "Contexto",
+    "original": "Concordant Original",
+    "french": "Traducción francesa formal",
+    "darby": "Versión Darby",
+    "greek_term": "Término griego",
+    "analysis": "Análisis"
+  },
+  "breadcrumbs": {
+    "evangiles": "Evangelios",
+    "epitres": "Epístolas",
+    "analyses": "Análisis"
+  },
+  "filter": {
+    "title": "Filtrar versículos",
+    "term": "Término griego",
+    "apply": "Aplicar"
+  },
+  "book": {
+    "title": "Versículos en",
+    "total_verses": "Total de versículos"
+  },
+  "analysis": {
+    "title": "Análisis",
+    "back_to_list": "Volver a la lista"
+  }
+}

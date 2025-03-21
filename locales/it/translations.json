@@ -1,0 +1,74 @@
+{
+  "title": "Analisi dei termini biblici",
+  "main_title": "Analisi dei termini 'Eone' ed 'Eonico'",
+  "nav": {
+    "home": "Home",
+    "gospels": "Vangeli",
+    "epistles": "Epistole",
+    "others": "Altri",
+    "analyses": "Analisi",
+    "information": "Informazioni",
+    "statistics": "Statistiche",
+    "ktk_analysis": "Analisi KTK",
+    "misleading_translations": "Traduzioni fuorvianti",
+    "reinforced_deception": "Inganno rafforzato",
+    "other_terms": "Altri termini mal tradotti",
+    "in_depth": "Analisi approfondita",
+    "about": "Chi siamo"
+  },
+  "hero": {
+    "title": "Analisi comparativa dei termini greci 'eone' ed 'eonico'",
+    "subtitle": "Scopri il vero significato dei termini mal tradotti nella Bibbia"
+  },
+  "intro": {
+    "title": "Introduzione",
+    "p1": "Questo sito presenta un'analisi comparativa dei termini greci 'eone' (αἰών) ed 'eonico' (αἰώνιος) nel Nuovo Testamento, così come altri termini spesso mal tradotti nelle versioni convenzionali della Bibbia.",
+    "p2": "La nostra analisi si basa sui principi della Keys to the Kingdom Bible (KTK) e confronta la versione originale Concordant, la sua traduzione formale francese e la versione Darby, evidenziando le traduzioni potenzialmente fuorvianti.",
+    "p3": "Naviga attraverso le diverse sezioni per esplorare i versetti per libro biblico e scoprire analisi dettagliate."
+  },
+  "featured": {
+    "title": "Versetti in evidenza"
+  },
+  "stats": {
+    "title": "Statistiche rapide",
+    "occurrences": "Occorrenze",
+    "occurrences_desc": "versetti contenenti i termini 'eone' o 'eonico'",
+    "books": "Libri",
+    "books_desc": "libri del Nuovo Testamento contenenti questi termini",
+    "gospels": "Vangeli",
+    "gospels_desc": "occorrenze nei quattro vangeli",
+    "epistles": "Epistole",
+    "epistles_desc": "occorrenze nelle epistole"
+  },
+  "footer": {
+    "copyright": "© 2025 Analisi dei termini biblici",
+    "contact": "Contatti"
+  },
+  "verse": {
+    "view_details": "Visualizza dettagli",
+    "context": "Contesto",
+    "original": "Concordant Originale",
+    "french": "Traduzione francese formale",
+    "darby": "Versione Darby",
+    "greek_term": "Termine greco",
+    "analysis": "Analisi"
+  },
+  "breadcrumbs": {
+    "evangiles": "Vangeli",
+    "epitres": "Epistole",
+    "analyses": "Analisi"
+  },
+  "filter": {
+    "title": "Filtra versetti",
+    "term": "Termine greco",
+    "apply": "Applica"
+  },
+  "book": {
+    "title": "Versetti in",
+    "total_verses": "Totale versetti"
+  },
+  "analysis": {
+    "title": "Analisi",
+    "back_to_list": "Torna all'elenco"
+  }
+}

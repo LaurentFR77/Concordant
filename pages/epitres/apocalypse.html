@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="book.title">Versets dans</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 data-i18n="main_title">Analyse des termes 'Éon' et 'Éonien'</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.gospels">Évangiles</a>
+                        <div class="dropdown-content">
+                            <a href="../evangiles/matthieu.html">Matthieu</a>
+                            <a href="../evangiles/marc.html">Marc</a>
+                            <a href="../evangiles/luc.html">Luc</a>
+                            <a href="../evangiles/jean.html">Jean</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.epistles">Épîtres</a>
+                        <div class="dropdown-content">
+                            <a href="../epitres/romains.html">Romains</a>
+                            <a href="../epitres/1corinthiens.html">1 Corinthiens</a>
+                            <a href="../epitres/2corinthiens.html">2 Corinthiens</a>
+                            <a href="../epitres/galates.html">Galates</a>
+                            <a href="../epitres/ephesiens.html">Éphésiens</a>
+                            <a href="../epitres/philippiens.html">Philippiens</a>
+                            <a href="../epitres/colossiens.html">Colossiens</a>
+                            <a href="../epitres/2thessaloniciens.html">2 Thessaloniciens</a>
+                            <a href="../epitres/1timothee.html">1 Timothée</a>
+                            <a href="../epitres/hebreux.html">Hébreux</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.others">Autres</a>
+                        <div class="dropdown-content">
+                            <a href="../epitres/actes.html">Actes</a>
+                            <a href="../epitres/apocalypse.html">Apocalypse</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.analyses">Analyses</a>
+                        <div class="dropdown-content">
+                            <a href="../analyses/information.html" data-i18n="nav.information">Information</a>
+                            <a href="../analyses/statistiques.html" data-i18n="nav.statistics">Statistiques</a>
+                            <a href="../analyses/ktk.html" data-i18n="nav.ktk_analysis">Analyse KTK</a>
+                            <a href="../analyses/traductions_trompeuses.html" data-i18n="nav.misleading_translations">Traductions trompeuses</a>
+                            <a href="../analyses/tromperie_renforcee.html" data-i18n="nav.reinforced_deception">Tromperie renforcée</a>
+                            <a href="../analyses/autres_termes.html" data-i18n="nav.other_terms">Autres termes mal traduits</a>
+                            <a href="../analyses/approfondie.html" data-i18n="nav.in_depth">Analyse approfondie</a>
+                        </div>
+                    </li>
+                    <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                    <option value="nl">Nederlands</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="breadcrumbs"></div>
+            
+            <section class="book-header">
+                <h2 id="book-title"></h2>
+                <p id="book-stats"></p>
+            </section>
+            
+            <section class="filter-section">
+                <h3 data-i18n="filter.title">Filtrer les versets</h3>
+                <form id="filter-form" class="mb-2">
+                    <div class="filter-group">
+                        <label for="term-filter" data-i18n="filter.term">Terme grec</label>
+                        <input type="text" id="term-filter" name="term">
+                    </div>
+                    <button type="submit" class="btn" data-i18n="filter.apply">Appliquer</button>
+                </form>
+            </section>
+            
+            <section class="verses-section">
+                <div id="verses-container">
+                    <!-- Les versets seront chargés dynamiquement ici -->
+                    <div class="loading">Chargement des versets...</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2025 Analyse des termes bibliques</p>
+            <div class="footer-nav">
+                <a href="../../index.html" data-i18n="nav.home">Accueil</a>
+                <a href="../about.html" data-i18n="nav.about">À propos</a>
+                <a href="#" data-i18n="footer.contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/data-loader.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtenir le nom du livre à partir de l'URL
+            const path = window.location.pathname;
+            const filename = path.substring(path.lastIndexOf('/') + 1);
+            const bookName = filename.replace('.html', '');
+            
+            // Déterminer la catégorie (évangile ou épître)
+            const isGospel = path.includes('/evangiles/');
+            const category = isGospel ? 'evangiles' : 'epitres';
+            
+            // Créer le fil d'Ariane
+            const breadcrumbsEl = document.getElementById('breadcrumbs');
+            breadcrumbsEl.innerHTML = createBreadcrumbs(`${category}/${bookName}`);
+            
+            // Mettre à jour le titre de la page
+            const bookTitleEl = document.getElementById('book-title');
+            const formattedBookName = bookName.charAt(0).toUpperCase() + bookName.slice(1);
+            bookTitleEl.textContent = `${i18n.translate('book.title')} ${formattedBookName}`;
+            
+            // Charger les versets du livre
+            loadBookVerses(bookName);
+        });
+        
+        // Charger les versets d'un livre spécifique
+        function loadBookVerses(bookName) {
+            fetch('../../data/classification.json')
+                .then(response => response.json())
+                .then(data => {
+                    let bookVerses = [];
+                    let bookCategory = '';
+                    
+                    // Rechercher le livre dans les catégories
+                    for (const category in data) {
+                        for (const book in data[category]) {
+                            if (book.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") === bookName) {
+                                bookVerses = data[category][book];
+                                bookCategory = category;
+                                break;
+                            }
+                        }
+                        if (bookVerses.length > 0) break;
+                    }
+                    
+                    // Mettre à jour les statistiques du livre
+                    const bookStatsEl = document.getElementById('book-stats');
+                    bookStatsEl.textContent = `${i18n.translate('book.total_verses')}: ${bookVerses.length}`;
+                    
+                    // Afficher les versets
+                    displayVerses(bookVerses);
+                })
+                .catch(error => {
+                    console.error('Erreur lors du chargement des versets:', error);
+                    const versesContainer = document.getElementById('verses-container');
+                    versesContainer.innerHTML = '<p>Erreur lors du chargement des versets.</p>';
+                });
+        }
+        
+        // Afficher les versets dans le conteneur
+        function displayVerses(verses) {
+            const versesContainer = document.getElementById('verses-container');
+            versesContainer.innerHTML = '';
+            
+            if (verses.length === 0) {
+                versesContainer.innerHTML = '<p>Aucun verset trouvé pour ce livre.</p>';
+                return;
+            }
+            
+            verses.forEach(verse => {
+                const verseCard = document.createElement('div');
+                verseCard.className = 'verse-card mb-2';
+                verseCard.id = verse.Référence.replace(/\s+/g, '_').toLowerCase();
+                
+                const header = document.createElement('div');
+                header.className = 'verse-card-header';
+                header.innerHTML = `<h3>${verse.Référence}</h3>`;
+                
+                const body = document.createElement('div');
+                body.className = 'verse-card-body';
+                
+                // Contexte
+                if (verse['Contexte (verset précédent)']) {
+                    const context = document.createElement('div');
+                    context.className = 'verse-context mb-1';
+                    context.innerHTML = `
+                        <h4 data-i18n="verse.context">Contexte</h4>
+                        <p>${verse['Contexte (verset précédent)']}</p>
+                    `;
+                    body.appendChild(context);
+                }
+                
+                // Traductions
+                const translations = document.createElement('div');
+                translations.className = 'translations mb-2';
+                
+                // Concordant Original
+                const originalCard = document.createElement('div');
+                originalCard.className = 'translation-card';
+                originalCard.innerHTML = `
+                    <div class="translation-header">
+                        <h4 data-i18n="verse.original">Concordant Original</h4>
+                    </div>
+                    <div class="translation-body">
+                        <p>${verse['Concordant Original']}</p>
+                    </div>
+                `;
+                
+                // Traduction française soutenue
+                const frenchCard = document.createElement('div');
+                frenchCard.className = 'translation-card';
+                frenchCard.innerHTML = `
+                    <div class="translation-header">
+                        <h4 data-i18n="verse.french">Traduction française soutenue</h4>
+                    </div>
+                    <div class="translation-body">
+                        <p>${verse['Traduction française soutenue']}</p>
+                    </div>
+                `;
+                
+                // Version Darby
+                const darbyCard = document.createElement('div');
+                darbyCard.className = 'translation-card';
+                darbyCard.innerHTML = `
+                    <div class="translation-header">
+                        <h4 data-i18n="verse.darby">Version Darby</h4>
+                    </div>
+                    <div class="translation-body">
+                        <p>${verse['Version Darby']}</p>
+                    </div>
+                `;
+                
+                translations.appendChild(originalCard);
+                translations.appendChild(frenchCard);
+                translations.appendChild(darbyCard);
+                
+                // Terme grec
+                const term = document.createElement('div');
+                term.className = 'verse-term mb-1';
+                term.innerHTML = `
+                    <h4 data-i18n="verse.greek_term">Terme grec</h4>
+                    <p class="greek-term">${verse['Terme grec']}</p>
+                `;
+                
+                // Analyse
+                const analysis = document.createElement('div');
+                analysis.className = 'analysis-section';
+                analysis.innerHTML = `
+                    <h4 data-i18n="verse.analysis">Analyse</h4>
+                    <p>${verse['Analyse']}</p>
+                `;
+                
+                body.appendChild(translations);
+                body.appendChild(term);
+                body.appendChild(analysis);
+                
+                verseCard.appendChild(header);
+                verseCard.appendChild(body);
+                
+                versesContainer.appendChild(verseCard);
+            });
+            
+            // Mettre à jour les traductions
+            i18n.updatePageContent();
+        }
+    </script>
+</body>
+</html>

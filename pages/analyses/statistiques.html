@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="analysis.title">Analyse</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 data-i18n="main_title">Analyse des termes 'Éon' et 'Éonien'</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.gospels">Évangiles</a>
+                        <div class="dropdown-content">
+                            <a href="../evangiles/matthieu.html">Matthieu</a>
+                            <a href="../evangiles/marc.html">Marc</a>
+                            <a href="../evangiles/luc.html">Luc</a>
+                            <a href="../evangiles/jean.html">Jean</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.epistles">Épîtres</a>
+                        <div class="dropdown-content">
+                            <a href="../epitres/romains.html">Romains</a>
+                            <a href="../epitres/1corinthiens.html">1 Corinthiens</a>
+                            <a href="../epitres/2corinthiens.html">2 Corinthiens</a>
+                            <a href="../epitres/galates.html">Galates</a>
+                            <a href="../epitres/ephesiens.html">Éphésiens</a>
+                            <a href="../epitres/philippiens.html">Philippiens</a>
+                            <a href="../epitres/colossiens.html">Colossiens</a>
+                            <a href="../epitres/2thessaloniciens.html">2 Thessaloniciens</a>
+                            <a href="../epitres/1timothee.html">1 Timothée</a>
+                            <a href="../epitres/hebreux.html">Hébreux</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.others">Autres</a>
+                        <div class="dropdown-content">
+                            <a href="../epitres/actes.html">Actes</a>
+                            <a href="../epitres/apocalypse.html">Apocalypse</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.analyses">Analyses</a>
+                        <div class="dropdown-content">
+                            <a href="../analyses/information.html" data-i18n="nav.information">Information</a>
+                            <a href="../analyses/statistiques.html" data-i18n="nav.statistics">Statistiques</a>
+                            <a href="../analyses/ktk.html" data-i18n="nav.ktk_analysis">Analyse KTK</a>
+                            <a href="../analyses/traductions_trompeuses.html" data-i18n="nav.misleading_translations">Traductions trompeuses</a>
+                            <a href="../analyses/tromperie_renforcee.html" data-i18n="nav.reinforced_deception">Tromperie renforcée</a>
+                            <a href="../analyses/autres_termes.html" data-i18n="nav.other_terms">Autres termes mal traduits</a>
+                            <a href="../analyses/approfondie.html" data-i18n="nav.in_depth">Analyse approfondie</a>
+                        </div>
+                    </li>
+                    <li><a href="../about.html" data-i18n="nav.about">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                    <option value="nl">Nederlands</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="breadcrumbs"></div>
+            
+            <section class="analysis-header">
+                <h2 id="analysis-title" data-i18n="nav.statistiques">statistiques</h2>
+            </section>
+            
+            <section class="analysis-content" id="analysis-content">
+                <!-- Le contenu sera chargé dynamiquement ici -->
+                <div class="loading">Chargement de l'analyse...</div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2025 Analyse des termes bibliques</p>
+            <div class="footer-nav">
+                <a href="../../index.html" data-i18n="nav.home">Accueil</a>
+                <a href="../about.html" data-i18n="nav.about">À propos</a>
+                <a href="#" data-i18n="footer.contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/i18n.js"></script>
+    <script src="../../js/data-loader.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtenir le nom de l'analyse à partir de l'URL
+            const path = window.location.pathname;
+            const filename = path.substring(path.lastIndexOf('/') + 1);
+            const analysisName = filename.replace('.html', '');
+            
+            // Créer le fil d'Ariane
+            const breadcrumbsEl = document.getElementById('breadcrumbs');
+            breadcrumbsEl.innerHTML = createBreadcrumbs(`analyses/${analysisName}`);
+            
+            // Charger les données de l'analyse
+            loadAnalysisData(analysisName);
+        });
+        
+        // Charger les données d'une analyse spécifique
+        function loadAnalysisData(analysisName) {
+            fetch('../../data/' + analysisName + '.json')
+                .then(response => response.json())
+                .then(data => {
+                    displayAnalysis(data, analysisName);
+                })
+                .catch(error => {
+                    console.error('Erreur lors du chargement de l\'analyse:', error);
+                    const analysisContent = document.getElementById('analysis-content');
+                    analysisContent.innerHTML = '<p>Erreur lors du chargement de l\'analyse.</p>';
+                });
+        }
+        
+        // Afficher l'analyse dans le conteneur
+        function displayAnalysis(data, analysisName) {
+            const analysisContent = document.getElementById('analysis-content');
+            analysisContent.innerHTML = '';
+            
+            if (data.length === 0) {
+                analysisContent.innerHTML = '<p>Aucune donnée trouvée pour cette analyse.</p>';
+                return;
+            }
+            
+            // Déterminer le format d'affichage en fonction du type d'analyse
+            if (analysisName === 'information' || analysisName === 'statistiques' || 
+                analysisName === 'ktk' || analysisName === 'tromperie_renforcee' || 
+                analysisName === 'approfondie') {
+                // Format simple pour les analyses textuelles
+                const content = document.createElement('div');
+                
+                data.forEach(item => {
+                    const keys = Object.keys(item);
+                    if (keys.length > 0) {
+                        const paragraph = document.createElement('p');
+                        paragraph.className = 'mb-2';
+                        paragraph.textContent = item[keys[0]];
+                        content.appendChild(paragraph);
+                    }
+                });
+                
+                analysisContent.appendChild(content);
+            } else if (analysisName === 'traductions_trompeuses' || analysisName === 'autres_termes') {
+                // Format tableau pour les analyses structurées
+                const table = document.createElement('table');
+                table.className = 'analysis-table';
+                
+                // Créer l'en-tête du tableau
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+                
+                const keys = Object.keys(data[0]);
+                keys.forEach(key => {
+                    if (key !== 'Unnamed: 0' && key !== 'Unnamed: 1' && key !== 'Unnamed: 2' && 
+                        key !== 'Unnamed: 3' && key !== 'Unnamed: 4' && key !== 'Unnamed: 5') {
+                        const th = document.createElement('th');
+                        th.textContent = key;
+                        headerRow.appendChild(th);
+                    }
+                });
+                
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+                
+                // Créer le corps du tableau
+                const tbody = document.createElement('tbody');
+                
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    
+                    keys.forEach(key => {
+                        if (key !== 'Unnamed: 0' && key !== 'Unnamed: 1' && key !== 'Unnamed: 2' && 
+                            key !== 'Unnamed: 3' && key !== 'Unnamed: 4' && key !== 'Unnamed: 5') {
+                            const td = document.createElement('td');
+                            td.textContent = item[key] || '';
+                            row.appendChild(td);
+                        }
+                    });
+                    
+                    tbody.appendChild(row);
+                });
+                
+                table.appendChild(tbody);
+                analysisContent.appendChild(table);
+            }
+            
+            // Mettre à jour les traductions
+            i18n.updatePageContent();
+        }
+    </script>
+</body>
+</html>

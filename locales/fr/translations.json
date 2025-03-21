@@ -1,0 +1,74 @@
+{
+  "title": "Analyse des termes bibliques",
+  "main_title": "Analyse des termes 'Éon' et 'Éonien'",
+  "nav": {
+    "home": "Accueil",
+    "gospels": "Évangiles",
+    "epistles": "Épîtres",
+    "others": "Autres",
+    "analyses": "Analyses",
+    "information": "Information",
+    "statistics": "Statistiques",
+    "ktk_analysis": "Analyse KTK",
+    "misleading_translations": "Traductions trompeuses",
+    "reinforced_deception": "Tromperie renforcée",
+    "other_terms": "Autres termes mal traduits",
+    "in_depth": "Analyse approfondie",
+    "about": "À propos"
+  },
+  "hero": {
+    "title": "Analyse comparative des termes grecs 'éon' et 'éonien'",
+    "subtitle": "Découvrez la véritable signification des termes mal traduits dans la Bible"
+  },
+  "intro": {
+    "title": "Introduction",
+    "p1": "Ce site présente une analyse comparative des termes grecs 'éon' (αἰών) et 'éonien' (αἰώνιος) dans le Nouveau Testament, ainsi que d'autres termes souvent mal traduits dans les versions conventionnelles de la Bible.",
+    "p2": "Notre analyse s'appuie sur les principes de la Keys to the Kingdom Bible (KTK) et compare la version Concordant originale, sa traduction en français soutenu, et la version Darby, tout en mettant en évidence les traductions potentiellement trompeuses.",
+    "p3": "Naviguez à travers les différentes sections pour explorer les versets par livre biblique et découvrir les analyses détaillées."
+  },
+  "featured": {
+    "title": "Versets mis en avant"
+  },
+  "stats": {
+    "title": "Statistiques rapides",
+    "occurrences": "Occurrences",
+    "occurrences_desc": "versets contenant les termes 'éon' ou 'éonien'",
+    "books": "Livres",
+    "books_desc": "livres du Nouveau Testament contenant ces termes",
+    "gospels": "Évangiles",
+    "gospels_desc": "occurrences dans les quatre évangiles",
+    "epistles": "Épîtres",
+    "epistles_desc": "occurrences dans les épîtres"
+  },
+  "footer": {
+    "copyright": "© 2025 Analyse des termes bibliques",
+    "contact": "Contact"
+  },
+  "verse": {
+    "view_details": "Voir les détails",
+    "context": "Contexte",
+    "original": "Concordant Original",
+    "french": "Traduction française soutenue",
+    "darby": "Version Darby",
+    "greek_term": "Terme grec",
+    "analysis": "Analyse"
+  },
+  "breadcrumbs": {
+    "evangiles": "Évangiles",
+    "epitres": "Épîtres",
+    "analyses": "Analyses"
+  },
+  "filter": {
+    "title": "Filtrer les versets",
+    "term": "Terme grec",
+    "apply": "Appliquer"
+  },
+  "book": {
+    "title": "Versets dans",
+    "total_verses": "Total des versets"
+  },
+  "analysis": {
+    "title": "Analyse",
+    "back_to_list": "Retour à la liste"
+  }
+}

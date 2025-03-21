@@ -1,0 +1,74 @@
+{
+  "title": "Analyse biblischer Begriffe",
+  "main_title": "Analyse der Begriffe 'Äon' und 'äonisch'",
+  "nav": {
+    "home": "Startseite",
+    "gospels": "Evangelien",
+    "epistles": "Briefe",
+    "others": "Andere",
+    "analyses": "Analysen",
+    "information": "Information",
+    "statistics": "Statistiken",
+    "ktk_analysis": "KTK-Analyse",
+    "misleading_translations": "Irreführende Übersetzungen",
+    "reinforced_deception": "Verstärkte Täuschung",
+    "other_terms": "Andere falsch übersetzte Begriffe",
+    "in_depth": "Tiefgehende Analyse",
+    "about": "Über uns"
+  },
+  "hero": {
+    "title": "Vergleichende Analyse der griechischen Begriffe 'Äon' und 'äonisch'",
+    "subtitle": "Entdecken Sie die wahre Bedeutung falsch übersetzter Begriffe in der Bibel"
+  },
+  "intro": {
+    "title": "Einführung",
+    "p1": "Diese Website präsentiert eine vergleichende Analyse der griechischen Begriffe 'Äon' (αἰών) und 'äonisch' (αἰώνιος) im Neuen Testament sowie anderer Begriffe, die in herkömmlichen Bibelversionen oft falsch übersetzt werden.",
+    "p2": "Unsere Analyse basiert auf den Prinzipien der Keys to the Kingdom Bible (KTK) und vergleicht die originale Concordant-Version, ihre formelle französische Übersetzung und die Darby-Version, wobei potenziell irreführende Übersetzungen hervorgehoben werden.",
+    "p3": "Navigieren Sie durch die verschiedenen Abschnitte, um Verse nach biblischem Buch zu erkunden und detaillierte Analysen zu entdecken."
+  },
+  "featured": {
+    "title": "Hervorgehobene Verse"
+  },
+  "stats": {
+    "title": "Schnelle Statistiken",
+    "occurrences": "Vorkommen",
+    "occurrences_desc": "Verse, die die Begriffe 'Äon' oder 'äonisch' enthalten",
+    "books": "Bücher",
+    "books_desc": "Bücher des Neuen Testaments, die diese Begriffe enthalten",
+    "gospels": "Evangelien",
+    "gospels_desc": "Vorkommen in den vier Evangelien",
+    "epistles": "Briefe",
+    "epistles_desc": "Vorkommen in den Briefen"
+  },
+  "footer": {
+    "copyright": "© 2025 Analyse biblischer Begriffe",
+    "contact": "Kontakt"
+  },
+  "verse": {
+    "view_details": "Details anzeigen",
+    "context": "Kontext",
+    "original": "Concordant Original",
+    "french": "Formelle französische Übersetzung",
+    "darby": "Darby-Version",
+    "greek_term": "Griechischer Begriff",
+    "analysis": "Analyse"
+  },
+  "breadcrumbs": {
+    "evangiles": "Evangelien",
+    "epitres": "Briefe",
+    "analyses": "Analysen"
+  },
+  "filter": {
+    "title": "Verse filtern",
+    "term": "Griechischer Begriff",
+    "apply": "Anwenden"
+  },
+  "book": {
+    "title": "Verse in",
+    "total_verses": "Gesamtzahl der Verse"
+  },
+  "analysis": {
+    "title": "Analyse",
+    "back_to_list": "Zurück zur Liste"
+  }
+}

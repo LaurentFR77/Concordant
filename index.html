@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Analyse des termes bibliques</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 data-i18n="main_title">Analyse des termes 'Éon' et 'Éonien'</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.gospels">Évangiles</a>
+                        <div class="dropdown-content">
+                            <a href="pages/evangiles/matthieu.html">Matthieu</a>
+                            <a href="pages/evangiles/marc.html">Marc</a>
+                            <a href="pages/evangiles/luc.html">Luc</a>
+                            <a href="pages/evangiles/jean.html">Jean</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.epistles">Épîtres</a>
+                        <div class="dropdown-content">
+                            <a href="pages/epitres/romains.html">Romains</a>
+                            <a href="pages/epitres/1corinthiens.html">1 Corinthiens</a>
+                            <a href="pages/epitres/2corinthiens.html">2 Corinthiens</a>
+                            <a href="pages/epitres/galates.html">Galates</a>
+                            <a href="pages/epitres/ephesiens.html">Éphésiens</a>
+                            <a href="pages/epitres/philippiens.html">Philippiens</a>
+                            <a href="pages/epitres/colossiens.html">Colossiens</a>
+                            <a href="pages/epitres/2thessaloniciens.html">2 Thessaloniciens</a>
+                            <a href="pages/epitres/1timothee.html">1 Timothée</a>
+                            <a href="pages/epitres/hebreux.html">Hébreux</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.others">Autres</a>
+                        <div class="dropdown-content">
+                            <a href="pages/epitres/actes.html">Actes</a>
+                            <a href="pages/epitres/apocalypse.html">Apocalypse</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-i18n="nav.analyses">Analyses</a>
+                        <div class="dropdown-content">
+                            <a href="pages/analyses/information.html" data-i18n="nav.information">Information</a>
+                            <a href="pages/analyses/statistiques.html" data-i18n="nav.statistics">Statistiques</a>
+                            <a href="pages/analyses/ktk.html" data-i18n="nav.ktk_analysis">Analyse KTK</a>
+                            <a href="pages/analyses/traductions_trompeuses.html" data-i18n="nav.misleading_translations">Traductions trompeuses</a>
+                            <a href="pages/analyses/tromperie_renforcee.html" data-i18n="nav.reinforced_deception">Tromperie renforcée</a>
+                            <a href="pages/analyses/autres_termes.html" data-i18n="nav.other_terms">Autres termes mal traduits</a>
+                            <a href="pages/analyses/approfondie.html" data-i18n="nav.in_depth">Analyse approfondie</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/about.html" data-i18n="nav.about">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                    <option value="nl">Nederlands</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 data-i18n="hero.title">Analyse comparative des termes grecs 'éon' et 'éonien'</h2>
+                <p data-i18n="hero.subtitle">Découvrez la véritable signification des termes mal traduits dans la Bible</p>
+            </div>
+        </section>
+
+        <section class="introduction">
+            <div class="container">
+                <h2 data-i18n="intro.title">Introduction</h2>
+                <div class="intro-content">
+                    <p data-i18n="intro.p1">Ce site présente une analyse comparative des termes grecs 'éon' (αἰών) et 'éonien' (αἰώνιος) dans le Nouveau Testament, ainsi que d'autres termes souvent mal traduits dans les versions conventionnelles de la Bible.</p>
+                    <p data-i18n="intro.p2">Notre analyse s'appuie sur les principes de la Keys to the Kingdom Bible (KTK) et compare la version Concordant originale, sa traduction en français soutenu, et la version Darby, tout en mettant en évidence les traductions potentiellement trompeuses.</p>
+                    <p data-i18n="intro.p3">Naviguez à travers les différentes sections pour explorer les versets par livre biblique et découvrir les analyses détaillées.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-verses">
+            <div class="container">
+                <h2 data-i18n="featured.title">Versets mis en avant</h2>
+                <div class="verse-cards" id="featured-verses-container">
+                    <!-- Les versets seront chargés dynamiquement ici -->
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-stats">
+            <div class="container">
+                <h2 data-i18n="stats.title">Statistiques rapides</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 data-i18n="stats.occurrences">Occurrences</h3>
+                        <p class="stat-number" id="total-occurrences">65</p>
+                        <p data-i18n="stats.occurrences_desc">versets contenant les termes 'éon' ou 'éonien'</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-i18n="stats.books">Livres</h3>
+                        <p class="stat-number" id="total-books">14</p>
+                        <p data-i18n="stats.books_desc">livres du Nouveau Testament contenant ces termes</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-i18n="stats.gospels">Évangiles</h3>
+                        <p class="stat-number" id="gospel-occurrences">29</p>
+                        <p data-i18n="stats.gospels_desc">occurrences dans les quatre évangiles</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-i18n="stats.epistles">Épîtres</h3>
+                        <p class="stat-number" id="epistle-occurrences">33</p>
+                        <p data-i18n="stats.epistles_desc">occurrences dans les épîtres</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2025 Analyse des termes bibliques</p>
+            <div class="footer-nav">
+                <a href="index.html" data-i18n="nav.home">Accueil</a>
+                <a href="pages/about.html" data-i18n="nav.about">À propos</a>
+                <a href="#" data-i18n="footer.contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

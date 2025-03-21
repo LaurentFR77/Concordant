@@ -1,0 +1,74 @@
+{
+  "title": "Análise de termos bíblicos",
+  "main_title": "Análise dos termos 'Éon' e 'Eónico'",
+  "nav": {
+    "home": "Início",
+    "gospels": "Evangelhos",
+    "epistles": "Epístolas",
+    "others": "Outros",
+    "analyses": "Análises",
+    "information": "Informação",
+    "statistics": "Estatísticas",
+    "ktk_analysis": "Análise KTK",
+    "misleading_translations": "Traduções enganosas",
+    "reinforced_deception": "Engano reforçado",
+    "other_terms": "Outros termos mal traduzidos",
+    "in_depth": "Análise aprofundada",
+    "about": "Sobre"
+  },
+  "hero": {
+    "title": "Análise comparativa dos termos gregos 'éon' e 'eónico'",
+    "subtitle": "Descubra o verdadeiro significado dos termos mal traduzidos na Bíblia"
+  },
+  "intro": {
+    "title": "Introdução",
+    "p1": "Este site apresenta uma análise comparativa dos termos gregos 'éon' (αἰών) e 'eónico' (αἰώνιος) no Novo Testamento, bem como outros termos frequentemente mal traduzidos nas versões convencionais da Bíblia.",
+    "p2": "Nossa análise baseia-se nos princípios da Keys to the Kingdom Bible (KTK) e compara a versão Concordant original, sua tradução formal para o francês e a versão Darby, destacando as traduções potencialmente enganosas.",
+    "p3": "Navegue pelas diferentes seções para explorar os versículos por livro bíblico e descobrir análises detalhadas."
+  },
+  "featured": {
+    "title": "Versículos em destaque"
+  },
+  "stats": {
+    "title": "Estatísticas rápidas",
+    "occurrences": "Ocorrências",
+    "occurrences_desc": "versículos contendo os termos 'éon' ou 'eónico'",
+    "books": "Livros",
+    "books_desc": "livros do Novo Testamento contendo estes termos",
+    "gospels": "Evangelhos",
+    "gospels_desc": "ocorrências nos quatro evangelhos",
+    "epistles": "Epístolas",
+    "epistles_desc": "ocorrências nas epístolas"
+  },
+  "footer": {
+    "copyright": "© 2025 Análise de termos bíblicos",
+    "contact": "Contato"
+  },
+  "verse": {
+    "view_details": "Ver detalhes",
+    "context": "Contexto",
+    "original": "Concordant Original",
+    "french": "Tradução francesa formal",
+    "darby": "Versão Darby",
+    "greek_term": "Termo grego",
+    "analysis": "Análise"
+  },
+  "breadcrumbs": {
+    "evangiles": "Evangelhos",
+    "epitres": "Epístolas",
+    "analyses": "Análises"
+  },
+  "filter": {
+    "title": "Filtrar versículos",
+    "term": "Termo grego",
+    "apply": "Aplicar"
+  },
+  "book": {
+    "title": "Versículos em",
+    "total_verses": "Total de versículos"
+  },
+  "analysis": {
+    "title": "Análise",
+    "back_to_list": "Voltar à lista"
+  }
+}
